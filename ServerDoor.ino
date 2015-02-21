@@ -57,18 +57,20 @@ void loop() {
     client.stop();
   }
   
+  // 1.- Read RFID
+  
+  // 2.- Verify in local storage 
+  
+  // 3.- If is not in local storage 
+  if(true){
+    // Make a POST request to Session Web Service
+    
+  }
+  // Make a POST request to Log Session Web 
+  
   delay(50); // Poll every 50ms
 }
 
 void openDoor(){
-  for(pos = 0; pos <= 180; pos += 1) // goes from 0 degrees to 180 degrees 
-  {                                  // in steps of 1 degree 
-    doorServo.write(pos);              // tell servo to go to position in variable 'pos' 
-    delay(15);                       // waits 15ms for the servo to reach the position 
-  } 
-  for(pos = 180; pos>=0; pos-=1)     // goes from 180 degrees to 0 degrees 
-  {                                
-    doorServo.write(pos);              // tell servo to go to position in variable 'pos' 
-    delay(15);                       // waits 15ms for the servo to reach the position 
-  } 
+
 }
