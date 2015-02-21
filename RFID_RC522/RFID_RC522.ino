@@ -85,12 +85,12 @@ void loop() {
   
   // IF VALID CARDIDENTIFIER!
   
-  if(cardKey == 1423244404 || cardKey == 3306424311 || cardKey == 1611156100){
+  if(cardKey == 1423244404 || cardKey == 3306424311 || cardKey == 1611156100 || cardKey == 1423714916 || cardKey == 1610997476 || cardKey == 1611485620 || cardKey == 1611295220 || cardKey == 1423421332 || cardKey == 1423916516 || cardKey == 1423536196 || cardKey == 1423673556){
     Serial.println("DOOR OPEN!!");
     
     digitalWrite(doorPin, HIGH);  
     
-    delay(3000);
+    delay(300);
     
     digitalWrite(doorPin, LOW);
     
