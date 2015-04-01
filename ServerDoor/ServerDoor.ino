@@ -5,6 +5,7 @@
  */
  
 #include <Bridge.h>
+#include <HttpClient.h>
 #include <YunServer.h>
 #include <YunClient.h>
 #include <Servo.h>
@@ -64,7 +65,16 @@ void loop() {
   // 3.- If is not in local storage 
   if(true){
     // Make a POST request to Session Web Service
-    
+    HttpClient client;
+    client.get("http://arduino.cc/asciilogo.txt");
+
+    while (client.available()) {
+      char c = client.read();
+      Serial.print(c);
+    }
+    Serial.flush();
+
+    delay(5000);
   }
   // Make a POST request to Log Session Web 
   
